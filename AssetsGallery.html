@@ -1,0 +1,301 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>City Lights - Manage City Assets on AVAX Block Chain</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			body {
+  margin: 20px;
+  padding: 0;
+  text-align: center;
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-auto-rows: 100px 300px;
+  grid-gap: 10px;
+  grid-auto-flow: dense;
+}
+
+.gallery-item{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.gallery-item .image{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.gallery-item .image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  cursor: pointer;
+  transition:.5s ease-in-out;
+}
+
+.gallery-item:hover .image img{
+  transform: scale(1.5);
+}
+
+.gallery-item .text{
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  font-size: 15px;
+  pointer-events: none;
+  z-index: 4;
+  transition: .3s ease-in-out;
+  -webkit-backdrop-filter: blur(5px) saturate(1.8);
+  backdrop-filter: blur(5px) saturate(1.8);
+}
+
+.gallery-item:hover .text{
+  opacity: 1;
+  animation: move-down .3s linear;
+  padding: 1em;
+  width: 100%;
+}
+
+.w-1{
+  grid-column: span 1;
+}
+
+.w-2{
+  grid-column: span 2;
+}
+
+.w-3{
+  grid-column: span 3;
+}
+
+.w-4{
+  grid-column: span 4;
+}
+
+.w-5{
+  grid-column: span 5;
+}
+
+.w-6{
+  grid-column: span 6;
+}
+
+.h-1{
+  grid-row: span 1;
+}
+
+.h-2{
+  grid-row: span 2;
+}
+
+.h-3{
+  grid-row: span 3;
+}
+
+.h-4{
+  grid-row: span 4;
+}
+
+.h-5{
+  grid-row: span 5;
+}
+
+.h-6{
+  grid-row: span 6;
+}
+
+@media screen and (max-width:500px){
+  .container{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .w-1,.w-2,.w-3,.w-4,.w-5,.w-6{
+  grid-column:span 1;
+  }
+  
+  .h-1,.h-2,.h-3,.h-4,.h-5,.h-6{
+  grid-row: span 3;
+  }
+}
+
+
+
+@keyframes move-down{
+
+  0%{
+    top: 10%;
+  }
+  50%{
+    top: 35%;
+  }
+  100%{
+    top: 50%;
+  }
+}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<h1>CityLights - Powered by Avalance NFT Wallet</h1>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="RegisterAsset.html">Register an Asset</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Intro -->
+			
+<div class="container">
+
+  <div class="gallery-container w-3 h-2">
+    <div class="gallery-item">
+      <div class="image">
+        <img src="images/CityAssets/0.png" alt="nature">
+      </div>
+      <div class="text">Name : Aqua Village <br> (AVAX Txn #: 22NH6vR76VSignYzo1xExV5QddGih1wXVzjCNSbBB8z3LCTaLs)</div>
+    </div>
+</div>
+
+  <div class="gallery-container w-3 h-3">
+    <div class="gallery-item">
+      <div class="image">
+        <img src="images/CityAssets/4.jpg" alt="people">
+      </div>
+      <div class="text">Name : Chandigarh Plaza Sector 17 <br> (AVAX Txn #: 24XGShf8ZZ5EiuvVJxUwegLhKaK173dhqsvpdw8u2yL1LZ14Qu)</div>
+    </div>
+  </div>
+
+  <div class="gallery-container h-2">
+    <div class="gallery-item">
+      <div class="image">
+        <img src="images/CityAssets/5.jpg" alt="sport">
+      </div>
+      <div class="text">Name : Chattbir Zoo <br> (AVAX Txn #: 24EEZz83Dkhq85HvZYRkDQfQ3zY7fgq3dKtBSfZQd9uYg9X7A3)</div>
+    </div>
+  </div>
+
+  <div class="gallery-container w-2 h-2">
+    <div class="gallery-item">
+      <div class="image">
+        <img src="images/CityAssets/7.jpg" alt="fitness">
+      </div>
+      <div class="text">Name : City Bird Sanctuary<br> (AVAX Txn #: AyiAjeq1SNgLGvaCWLuCoQCWp89J3R66fVuj2P8KBcNXkZYoY)</div>
+    </div>
+  </div>
+
+  <div class="gallery-container w-2 h-4">
+    <div class="gallery-item">
+      <div class="image">
+        <img src="images/CityAssets/8.jpg" alt="food">
+      </div>
+      <div class="text">Name : Fateh Burj Minar<br> (AVAX Txn #: wwyGg9FsHsYSRUfBXKSuW4KpRmqvxGsC2ydzoUeoyXDfxg36e)</div>
+    </div>
+  </div>
+
+  <div class="gallery-container w-1 h-2">
+    <div class="gallery-item">
+      <div class="image">
+        <img src="images/CityAssets/11.jpg" alt="travel">
+      </div>
+      <div class="text">Name : Japanese Garden<br> (AVAX Txn #: 2MaYAEU1iJZWTQASiUv8BWyYi3W1gscwUKi8ZNjSXNPi9fE5FH)</div>
+    </div>
+  </div>
+
+  <div class="gallery-container w-2 h-2">
+    <div class="gallery-item">
+      <div class="image">
+        <img src="images/CityAssets/12.jpg" alt="art">
+      </div>
+      <div class="text">Name : Le Corbusier Centre<br> (AVAX Txn #: JMa9XaeWgGv6yyA4cmFdhyLAGoECCkCfV5ngwKPn8xo6SxQuk)</div>
+    </div>
+  </div>
+
+  <div class="gallery-container w-3 h-2">
+    <div class="gallery-item">
+      <div class="image">
+        <img src="images/CityAssets/13.jpg" alt="cars">
+      </div>
+      <div class="text">Name : Mansa Devi Temple<br> (AVAX Txn #: 2F5bRtTkH3xdCe6Ug2Ub6QZZZU5WNMhAi1wRcNqdKTLHFp57JW)</div>
+    </div>
+  </div>
+
+  <div class="gallery-container w-3 h-2">
+    <div class="gallery-item">
+      <div class="image">
+        <img src="images/CityAssets/15.jpg" alt="art">
+      </div>
+      <div class="text">Name : Musical Fountain Sector 17<br> (AVAX Txn #: Ji5MCft8uQYNQJQhNtGyQRAsrgZvXb5g422oToqd9exSEWgkh)</div>
+    </div>
+  </div>
+
+  <div class="gallery-container h-2">
+    <div class="gallery-item">
+      <div class="image">
+        <img src="images/CityAssets/17.jpg" alt="art">
+      </div>
+      <div class="text">Name : Pinjore Gardens<br> (AVAX Txn #: YSzENcr5DtE1t5tWtpnVnMvhAnQg5qqbKhSLTkSrHk2F5oqBd)</div>
+    </div>
+  </div>
+
+  <div class="gallery-container h-2">
+    <div class="gallery-item">
+      <div class="image">
+        <img src="images/CityAssets/19.jpg" alt="art">
+      </div>
+      <div class="text">Name : Rose Garden<br> (AVAX Txn #: 2PW2KqYpJ8btVUoVFpVhJh2uu41GUPo4dKWHdL4Q77T81Hjv5T)</div>
+    </div>
+  </div>
+
+  <div class="gallery-container w-2 h-2">
+    <div class="gallery-item">
+      <div class="image">
+        <img src="images/CityAssets/22.jpg" alt="art">
+      </div>
+      <div class="text">Name : Tagore Theatre<br> (AVAX Txn #: 2candr4gcAfQKKd4GvphTiW28p2n1n15Aqnca2RGYTzr6ZgSdP)</div>
+    </div>
+  </div>
+
+</div>
+		
+		<!-- Footer -->
+			<footer id="footer">
+
+				<!-- Icons -->
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+					</ul>
+
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
